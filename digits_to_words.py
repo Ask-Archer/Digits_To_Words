@@ -18,7 +18,7 @@ def convert():
             print(tens[first_digit - 1])
         else:
             print((tens[first_digit - 1]) + "-" + (ones[second_digit - 1]))
-      except ValueError:
+      except (ValueError, IndexError):
           print("Please use a valid number. ")
 
 convert()
